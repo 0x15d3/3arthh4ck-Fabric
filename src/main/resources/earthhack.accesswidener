@@ -14,6 +14,11 @@ accessible field net/minecraft/util/math/BlockBox maxX I
 accessible field net/minecraft/util/math/BlockBox maxY I
 accessible field net/minecraft/util/math/BlockBox maxZ I
 
+
+# BlockPos (mutable bb)
+accessible field net/minecraft/util/math/Vec3i x I
+accessible field net/minecraft/util/math/Vec3i y I
+accessible field net/minecraft/util/math/Vec3i z I
 # Text
 accessible class net/minecraft/text/Style
 accessible method net/minecraft/text/MutableText <init> (Lnet/minecraft/text/TextContent;Ljava/util/List;Lnet/minecraft/text/Style;)V

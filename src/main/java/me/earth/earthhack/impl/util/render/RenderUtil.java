@@ -176,6 +176,19 @@ public class RenderUtil implements Globals {
         endRender();
     }
 
+
+    public static void renderBox(MatrixStack matrix, BlockPos pos ,Color color,float height,int boxAlpha)
+    {
+        Box bb = Interpolation.interpolatePos(pos, height);
+        startRender();
+        drawOutline(matrix, bb, 1.5f, color);
+        endRender();
+        Color boxColor = new Color(color.getRed(), color.getGreen(), color.getBlue(), boxAlpha);
+        startRender();
+        drawBox(matrix, bb, boxColor);
+        endRender();
+    }
+
     public static void drawOutline(MatrixStack matrix, Box bb, float lineWidth, Color color)
     {
         startRender();
